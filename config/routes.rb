@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       resources :states, only: %i(index show)
       resources :purposes, only: %i(index show)
       resources :grades, only: %i(index show)
+
+      get '/states/:id/:purpose_id', to: 'states#specific'
     end
   end
 end
