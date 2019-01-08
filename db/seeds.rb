@@ -20,7 +20,11 @@ CSV.parse(csv_str, headers: true) do |row|
   l.annual_inc = row['annual_inc']
   l.issue_d = row['issue_d']
   # lot of misc characters and elements in description, need to sanitize
-  l.desc = '' || row['desc'].gsub(/<br\/>|<br>|null|Borrower added on \d\d\/\d\d\/\d\d > /,"").strip
+  if !!row['desc']
+    l.desc = row['desc'].gsub(/<br\/>|<br>|null|Borrower added on \d\d\/\d\d\/\d\d > /,"").strip
+  else
+    l.desc = ''
+  end
   l.title = row['title']
   l.earliest_cr_line = row['earliest_cr_line']
   l.open_acc = row['open_acc']

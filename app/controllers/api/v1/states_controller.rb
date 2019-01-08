@@ -4,7 +4,7 @@ class Api::V1::StatesController < ApplicationController
   end
 
   def show
-    @state = State.find(params[:id])
+    @state = State.find_by(id: params[:id])
     render json: { state: @state, loans: @state.loans }
   end
 
