@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loan_amnt: 1
+  grade: one
+  purpose: one
+  state: one
+  home_owner: MyString
+  annual_inc: 1
+  issue_d: MyString
+  desc: MyString
+  title: MyString
+  earliest_cr_line: MyString
+  open_acc: 1
+  pub_rec: 1
+  last_credit_pull_d: MyString
+
+two:
+  loan_amnt: 1
+  grade: two
+  purpose: two
+  state: two
+  home_owner: MyString
+  annual_inc: 1
+  issue_d: MyString
+  desc: MyString
+  title: MyString
+  earliest_cr_line: MyString
+  open_acc: 1
+  pub_rec: 1
+  last_credit_pull_d: MyString
