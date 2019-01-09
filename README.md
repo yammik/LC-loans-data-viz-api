@@ -1,6 +1,6 @@
 # Lending Club Loan Stats API (Back End)
 
-Parses the CSV file available for download from [the Lending Club website](https://www.lendingclub.com/info/download-data.action).
+Parses the CSV file available for download from [the Lending Club website](https://www.lendingclub.com/info/download-data.action). Renders loan records in JSON, based on the parameters passed in and their relationship to the record.
 
 ## Usage
 #### Two ways:
@@ -13,13 +13,10 @@ Parses the CSV file available for download from [the Lending Club website](https
   2. `rails db:create && rails db:migrate && rails db:seed`
   3. `rails s` should start the server at port 3000 (Rails default).
   4. Uncomment line 4 and comment out line 3 in `src/lib/Api.js` in the front end.
-  
-## What it does:
-* Renders loan records in JSON, based on the parameters passed in and their relationship to the record.
 
 ## Tables :
 ##### `purpose`
-i.e. the purpose of the loan. There are 15 categories.
+i.e. the purpose of the loan. There are 15 categories. Somewhat weirdly named for a table but I kept the name of the column from the original dataset to keep it consistent.
 ##### `grade`
 Lending Club assigns a letter grade for the application based on several parameters.
 ##### `addr_state`
@@ -31,10 +28,10 @@ Since this is a fairly large dataset, I created tables of attributes I'm interes
 
 The API doesn't allow fetching *all* of the loan records because it's too much. To minimize the number of data being sent back, I used relationships between `loans` and `purpose||addr_state` to only grab the relevant records.
 
-This is my first time working with a dataset this large. Especially visualizing. Just gonna say it was a beast 🙃
+This is my first time working with a dataset this large. Especially visualizing. Just gonna say it was a beast 😎
 
 ## Future features
 - Looking into other parameters 
 - North Dakota is suspiciously missing data...hmm
 - State table can be updated with population size to normalize loan amounts
-- Slow load because of volume. Hash maps would make this significantly faster
+- Slow load because of volume. Data structure!!
