@@ -29,7 +29,7 @@ Belongs to the above three.
 
 Since this is a fairly large dataset, I created tables of attributes I'm interested in looking into, and created relationships. There are a bunch I omitted for the sake of time, but would have liked to check out other relationships as well, like the duration of opened credit line and such.
 
-The API doesn't allow fetching *all* of the loan records because of the sheer volume. To minimize the number of data being sent back, I used relationships between `loans` and `purpose||addr_state` to only grab the relevant records.
+The API doesn't allow fetching *all* of the loan records because it's too much. To minimize the number of data being sent back, I used relationships between `loans` and `purpose||addr_state` to only grab the relevant records.
 
 This is my first time working with a dataset this large. Especially visualizing. Just gonna say it was a beast 🙃
 
