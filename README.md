@@ -31,7 +31,7 @@ Since this is a fairly large dataset, I created tables of attributes I'm interes
 
 The API doesn't allow fetching *all* of the loan records because it's too much. To minimize the number of data being sent back, I used relationships between `loans` and `purpose||addr_state` to only grab the relevant records.
 
-This is my first time working with a dataset this large. Especially visualizing. Just gonna say it was a beast 🙃
+This is my first time working with a dataset this large. Especially visualizing. Just gonna say it was a beast 😎
 
 ## Future features
 - Looking into other parameters 
