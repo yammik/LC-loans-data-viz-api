@@ -34,4 +34,5 @@ This is my first time working with a dataset this large. Especially visualizing.
 - Looking into other parameters 
 - North Dakota is suspiciously missing data...hmm
 - State table can be updated with population size to normalize loan amounts
-- Slow load because of volume. Data structure!!
+- Slow load because of volume. Data structureee
+- Maybe chunk into pieces and send one chunk at a time?
