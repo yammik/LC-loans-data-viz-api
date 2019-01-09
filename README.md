@@ -16,7 +16,7 @@ Parses the CSV file available for download from [the Lending Club website](https
 
 ## Tables :
 ##### `purpose`
-i.e. the purpose of the loan. There are 15 categories.
+i.e. the purpose of the loan. There are 15 categories. Somewhat weirdly named for a table but I kept the name of the column from the original dataset to keep it consistent.
 ##### `grade`
 Lending Club assigns a letter grade for the application based on several parameters.
 ##### `addr_state`
