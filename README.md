@@ -1,7 +1,7 @@
 # Lending Club Loan Stats API (Back End)
 
 Parses the CSV file available for download from [the Lending Club website](https://www.lendingclub.com/info/download-data.action).<br/>
-Live at : http://hidden-shore-16694.herokuapp.com/api/v1<br/>
+
 ## Usage
 ###### Two ways:
 * Use the API I deployed on Heroku. The front end is currently happy with it and you really don't want to sit through the seeding on this one.<br/>(P.S. it plays the X-files theme song when it finishes seeding...just in case someone actually does this alone in the middle of the night)<br/>
