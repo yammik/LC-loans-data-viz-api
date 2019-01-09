@@ -4,12 +4,15 @@ Parses the CSV file available for download from [the Lending Club website](https
 
 ## Usage
 ###### Two ways:
-* Use the API I deployed on Heroku. The front end is currently happy with it and you really don't want to sit through the seeding on this one.
+* Use the API deployed on Heroku. The front end is currently happy with it and you really don't want to sit through the seeding on this one.
   - (P.S. it plays the X-files theme song when it finishes seeding...just in case someone actually does this alone in the middle of the night)
-* Clone this repo and :
-  1. `rails db:create && rails db:migrate && rails db:seed`
-  2. `rails s` should start the server at port 3000 (Rails default).
-  3. Uncomment line 4 and comment out line 3 in `src/lib/Api.js` in the front end.
+  - Live at http://hidden-shore-16694.herokuapp.com/api/v1/
+    - You can hit `/states`, `/purposes`, `/states/:id`, etc
+* Clone this repo and run :
+  1. `bundle install`
+  2. `rails db:create && rails db:migrate && rails db:seed`
+  3. `rails s` should start the server at port 3000 (Rails default).
+  4. Uncomment line 4 and comment out line 3 in `src/lib/Api.js` in the front end.
   
 #### What it does:
 * Renders loan records in JSON, based on the parameters passed in and their relationship to the record.
