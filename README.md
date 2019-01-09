@@ -1,6 +1,6 @@
 # Lending Club Loan Stats API (Back End)
 
-Parses the CSV file available for download from [the Lending Club website](https://www.lendingclub.com/info/download-data.action).
+Parses the CSV file available for download from [the Lending Club website](https://www.lendingclub.com/info/download-data.action). Renders loan records in JSON, based on the parameters passed in and their relationship to the record.
 
 ## Usage
 #### Two ways:
@@ -13,9 +13,6 @@ Parses the CSV file available for download from [the Lending Club website](https
   2. `rails db:create && rails db:migrate && rails db:seed`
   3. `rails s` should start the server at port 3000 (Rails default).
   4. Uncomment line 4 and comment out line 3 in `src/lib/Api.js` in the front end.
-  
-## What it does:
-* Renders loan records in JSON, based on the parameters passed in and their relationship to the record.
 
 ## Tables :
 ##### `purpose`
